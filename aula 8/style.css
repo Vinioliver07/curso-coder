@@ -1,0 +1,58 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "header""content""sign-up""feature1""feature2""feature2";
+
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(62, 140, 243);
+}
+
+.content {
+    grid-area: conteudo;
+    background-color: rgb(128, 128, 128);
+
+}
+
+.sign-up {
+    grid-area: sign-up;
+    background-color: rgb(129, 174, 233);
+}
+
+.feature1 {
+    grid-area: feature1;
+    background-color: rgb(241, 171, 90);
+}
+
+.feature2 {
+    grid-area: feature2;
+    background-color: rgb(219, 42, 42);
+}
+
+
+.feature3 {
+    grid-area: feature3;
+    background-color: rgb(156, 62, 243);
+}
+
+@media screen and (min-width:768px) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "content content"
+            "sign-up feature1"
+            "feature2 feature2";
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: ;
+    }
+
+}

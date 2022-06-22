@@ -1,0 +1,111 @@
+#gradiente div {
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+}
+
+#gradiente-1 {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+#gradiente-2 {
+    background-image: linear-gradient(to bottom, red, yellow);
+}
+
+#gradiente-3 {
+    background-image: linear-gradient(red, yellow);
+}
+
+#gradiente-4 {
+    background-image: linear-gradient(red, yellow);
+}
+
+#gradiente-5 {
+    background-image: linear-gradient(red, yellow);
+}
+
+#gradiente-6 {
+    background-image: linear-gradient(red, yellow);
+}
+
+#gradiente-7 {
+    background-image: linear-gradient(red, yellow);
+}
+
+#box div {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    background-color: red;
+    margin: 5px;
+}
+
+#box-1 {
+    transform: rotateY(30deg);
+}
+
+#box-1:hover {
+    transform: rotateY(20deg);
+}
+
+#box-2 {
+    transform: rotatex(30deg);
+}
+
+#box-2:hover {
+    transform: rotate(20deg);
+}
+
+#box-3 {
+    transform: rotate(60deg);
+}
+
+#box-3:hover {
+    transform: rotate(20deg);
+}
+
+#box-4 {
+    transform: rotateY(30deg);
+}
+
+#box-4:hover {
+    transform: rotate(20deg);
+}
+
+#box-5 {
+    transform: rotateY(30deg);
+    transition: all 2s;
+}
+
+#box-5:hover {
+    transform: rotate(20deg);
+    width:200px;
+    height:200px;
+}
+
+@keyframes um-efeito {
+    0% {
+        width: 400px;
+        height:400px  
+    }
+
+    35% {
+        width: 200px;
+        height:200px;  
+
+    }
+    50%{
+        width:600px;
+    height:600px    }
+
+}
+
+#um-efeito {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-iteration-count: infinite;
+    animation-name: um-efeito;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
