@@ -1,0 +1,19 @@
+h1 {
+    font-weight: 200;
+    border: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    padding-left: 25px;
+    font-size: larger;
+
+    a {
+        font-style: italic;
+
+        span {
+            background-color: aquamarine;
+        }
+    }
+}
